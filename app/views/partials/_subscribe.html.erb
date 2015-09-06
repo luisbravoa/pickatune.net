@@ -1,0 +1,46 @@
+<div class="<%= mode %>" id="subscribe">
+    <h1>Subscribe and know when new versions are available</h1>
+
+    <form class="form-inline">
+        <div id="subscribe-field">
+            <div class="form-group">
+                <label class="sr-only" for="exampleInputEmail">Email address</label>
+                <input type="email" class="form-control" id="email" placeholder="Email">
+            </div>
+            <button type="submit" class="btn btn-default">Subscribe</button>
+        </div>
+        <div id="subscribe-thanks">
+            <h3>Thanks for joining!</h3>
+        </div>
+    </form>
+
+    <script>
+        $(function () {
+            var AUTH_TOKEN = $('meta[name=csrf-token]').attr('content');
+
+            $('#subscribe form').submit(function (e) {
+                e.preventDefault();
+                var data = {
+                    email: $('#email').val(),
+                    authenticity_token: AUTH_TOKEN
+                };
+                function done() {
+                    $('#subscribe-field').fadeOut(function () {
+                        $('#subscribe-thanks').fadeIn();
+                    });
+                }
+                $.ajax({
+                    type: "POST",
+                    headers: {
+                        authenticity_token: AUTH_TOKEN
+                    },
+                    url: '/mailing_list',
+                    data: JSON.stringify(data),
+                    contentType: 'application/json',
+                    success: done,
+                    error: done
+                });
+            });
+        });
+    </script>
+</div>

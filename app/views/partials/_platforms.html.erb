@@ -1,0 +1,22 @@
+<div class="container" id="platforms">
+    <!-- Example row of columns -->
+    <h1>All Platforms</h1>
+
+    <div class="row text-center">
+        <div class="col-md-4 col-sm-6">
+            <%= render :partial => "partials/download_button", locals: {:platform => @platforms['win64']} %>
+            <%= render :partial => "partials/download_button", locals: {:platform => @platforms['win32']} %>
+        </div>
+        <div class="col-md-4 col-sm-6">
+            <%= render :partial => "partials/download_button", locals: {:platform => @platforms['osx64']} %>
+            <%= render :partial => "partials/download_button", locals: {:platform => @platforms['osx32']} %>
+        </div>
+        <div class="col-md-4 col-sm-6">
+
+            <%= render :partial => "partials/download_button", locals: {:platform => @platforms['linux64']} %>
+            <%= render :partial => "partials/download_button", locals: {:platform => @platforms['linux32']} %>
+        </div>
+    </div>
+
+    <hr>
+</div>

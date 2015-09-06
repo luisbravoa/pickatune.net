@@ -1,0 +1,57 @@
+<div class="container" id="thanks">
+
+    <h1>Thanks for downloading </h1>
+
+    <p><span id="message"></span>
+    </p>
+
+</div>
+<%= render :partial => "partials/subscribe", :locals => {:mode => ''} %>
+
+<script>
+    var link = '<a href="/dist/<%= @path %>">here</a>';
+    var message = 'Download will start in {0} seconds.';
+    var doneMessage = 'If the download did not start click ' + link + '.';
+    var count = 4;
+    var handler;
+
+    function download() {
+        window.location = '/dist/' + '<%= @path %>';
+    }
+
+    function onCount() {
+        if (count > 0) {
+            var m = message.replace('{0}', count);
+            showMessage(m);
+            count--;
+            defer();
+        } else {
+            delete handler;
+            showMessage(doneMessage);
+            download();
+        }
+
+    }
+
+    function defer() {
+        handler = setTimeout(onCount, 1000);
+    }
+
+    function showMessage(m) {
+        $('#message').html(m);
+    }
+
+    function start() {
+        var m = message.replace('{0}', count + 1);
+        showMessage(m);
+        defer();
+    }
+    function stop() {
+        var m = message.replace('{0}', count + 1);
+        showMessage(m);
+        defer();
+    }
+
+    start();
+
+</script>

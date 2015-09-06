@@ -1,0 +1,29 @@
+<%
+
+    case platform['platform']
+      when 'linux64'
+        icon = 'linux'
+        label = 'For Linux 64-Bits'
+      when 'linux32'
+        icon = 'linux'
+        label = 'For Linux 32-Bits'
+      when 'win32'
+        icon = 'windows'
+        label = 'For Windows 32-Bits'
+      when 'win64'
+        icon = 'windows'
+        label = 'For Windows 64-Bits'
+      when 'osx32'
+        icon = 'apple'
+        label = 'For OSX 32-Bits'
+      when 'osx64'
+        icon = 'apple'
+        label = 'For OSX 64-Bits'
+      end
+%>
+<div id="download-button">
+    <p>
+        <a href="download/<%= platform['platform'] %>/<%= platform['file'] %>" class="btn btn-primary btn-lg active" id="download">Download Pickatune <%= platform['version'] %><i class="fa fa-<%= icon %>"></i></a>
+    </p>
+    <p id="platform"><%= label %></p>
+</div>

@@ -1,0 +1,45 @@
+<div class="jumbotron" id="main">
+    <div class="container" id="welcome">
+        <div id="welcome-left">
+            <h1>Lightweight Player and Music Server</h1>
+            <%= render :partial => "partials/download_button", locals: {:platform => @platforms[@platform]} %>
+            <p id="platform-link"><a href="#platforms">Download Pickatune for another platform</a></p>
+            <%= @controller_message %>
+        </div>
+
+        <div id="welcome-right">
+            <%= image_tag("pickatune_mock.png", :width => '100%', :id => 'pickatune_mock.png') %>
+        </div>
+    </div>
+</div>
+
+<div class="container" id="info">
+    <!-- Example row of columns -->
+    <h1>Enjoy music</h1>
+
+    <div class="row">
+        <div class="col-md-4">
+            <h2>Serve music</h2>
+
+            <p>Pickatune acts as a music server scanning all your music and making them available on other devices
+                connected to the network.</p>
+        </div>
+        <div class="col-md-4">
+            <h2>Remote control</h2>
+
+            <p>Use your phone or tablet to control the player on your computer. </p>
+        </div>
+        <div class="col-md-4">
+            <h2>Party playlists</h2>
+
+            <p>Pickatune allows multiple users to play and add songs to the current play queue, making it perfect for
+                parties.</p>
+        </div>
+    </div>
+
+    <hr>
+</div>
+
+
+<%= render :partial => "partials/subscribe", :locals => {:mode => 'dark'} %>
+<%= render :partial => "partials/platforms" %>
