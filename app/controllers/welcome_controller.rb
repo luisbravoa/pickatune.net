@@ -21,7 +21,10 @@ class WelcomeController < ApplicationController
   def get_file_by_platform platform
     path = "public/dist/#{platform}"
     if File.exist?(path)
-      filepath = Dir["#{path}/*"].max_by { |f| File.ctime(f) }
+      filepath = Dir["#{path}/*"].max_by { |f|
+        version = File.basename(f, '.zip').split('-').last
+        Gem::Version.new(version)
+      }
       # Pathname.new(filepath).basename
       File.basename(filepath, '.zip')
       {
