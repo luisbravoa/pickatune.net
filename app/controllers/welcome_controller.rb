@@ -56,5 +56,7 @@ class WelcomeController < ApplicationController
       return 'linux64';
     end
 
+    'win64'
+
   end
 end
