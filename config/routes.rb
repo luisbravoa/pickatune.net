@@ -1,5 +1,6 @@
 Rails.application.routes.draw do
   post 'mailing_list' => 'mailing_list#create'
+  post 'contact' => 'welcome#contact'
   get 'download/:platform/:file' => 'welcome#download', :constraints => { :file => /[^\/]+/ }
   # get 'welcome/index'
   # match ":controller(/:action(/:id))", :via => :get

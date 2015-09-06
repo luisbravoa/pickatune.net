@@ -42,13 +42,23 @@ function platform() {
 
 
 $(function () {
-    $('#navbar, #main').onePageNav({
+    $('body').onePageNav({
         currentClass: "active",
         changeHash: true,
         scrollThreshold: 0.5,
         scrollSpeed: 750,
         filter: ":not(.external)",
-        easing: "swing"
+        easing: "swing",
+        begin: function() {
+            //I get fired when the animation is starting
+            console.log('begin')
+        },
+        end: function() {
+            //I get fired when the animation is ending
+        },
+        scrollChange: function($currentListItem) {
+            //I get fired when you enter a section and I pass the list item of the section
+        }
     });
 });
 

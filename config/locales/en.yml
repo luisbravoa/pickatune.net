@@ -20,4 +20,43 @@
 # available at http://guides.rubyonrails.org/i18n.html.
 
 en:
-  hello: "Hello world"
+  name: "Pickatune"
+  nav:
+    home: "Home"
+    download: "Download"
+    contact: "Contact"
+  welcome:
+    title: "Lightweight Player and Music Server"
+    download_platforms: "Download Pickatune for another platform"
+  info:
+    title: "Enjoy music"
+    feature1:
+      title: "Serve music"
+      content: "Pickatune acts as a music server scanning all your music and making them available on other devices connected to the network."
+    feature2:
+      title: "Remote control"
+      content: "Use your phone or tablet to control the player on your computer."
+    feature3:
+      title: "Party Playlist"
+      content: "Pickatune allows multiple users to play and add songs to the current play queue, making it perfect for parties."
+  subscribe:
+    title: "Subscribe and know when new versions are available"
+    placeholder: "Email address"
+    submit: "Subscribe"
+    thanks: "Thanks for joining!"
+  platforms:
+    title: "All Platforms"
+    download: "Download"
+    for: "for"
+  download:
+    title: "Thanks for downloading."
+    message: "Download will start in {0} seconds."
+    done_message: "If the download did not start click"
+    done_message_link: "here"
+  contact:
+    title: "Contact"
+    email: "Email"
+    name: "Name"
+    message: "Message"
+    submit: "Send"
+    success: "Thanks for the message. We'll get in  touch!"

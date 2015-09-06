@@ -1,6 +1,6 @@
 <div class="container" id="thanks">
 
-    <h1>Thanks for downloading </h1>
+    <h1><%= t "download.title"  %></h1>
 
     <p><span id="message"></span>
     </p>
@@ -9,9 +9,9 @@
 <%= render :partial => "partials/subscribe", :locals => {:mode => ''} %>
 
 <script>
-    var link = '<a href="/dist/<%= @path %>">here</a>';
-    var message = 'Download will start in {0} seconds.';
-    var doneMessage = 'If the download did not start click ' + link + '.';
+    var link = '<a href="/dist/<%= @path %>"><%= t "download.done_message_link"  %></a>';
+    var message = '<%= t "download.message"  %>';
+    var doneMessage = '<%= t "download.done_message_link"  %> ' + link + '.';
     var count = 4;
     var handler;
 

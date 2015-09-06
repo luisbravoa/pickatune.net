@@ -1,16 +1,16 @@
 <div class="<%= mode %>" id="subscribe">
-    <h1>Subscribe and know when new versions are available</h1>
+    <h1><%= t "subscribe.title"%></h1>
 
     <form class="form-inline">
         <div id="subscribe-field">
             <div class="form-group">
-                <label class="sr-only" for="exampleInputEmail">Email address</label>
-                <input type="email" class="form-control" id="email" placeholder="Email">
+                <label class="sr-only" for="exampleInputEmail"><%= t "subscribe.placeholder" %></label>
+                <input type="email" class="form-control" id="email" placeholder="<%= t "subscribe.placeholder" %>">
+                <button type="submit" class="btn btn-default"><%= t "subscribe.submit" %></button>
             </div>
-            <button type="submit" class="btn btn-default">Subscribe</button>
         </div>
         <div id="subscribe-thanks">
-            <h3>Thanks for joining!</h3>
+            <h3><%= t "subscribe.thanks" %></h3>
         </div>
     </form>
 

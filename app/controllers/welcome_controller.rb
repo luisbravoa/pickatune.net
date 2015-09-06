@@ -9,6 +9,9 @@ class WelcomeController < ApplicationController
   def download
     @path = "#{params['platform']}/#{params['file']}"
   end
+  def contact
+    ContactMailer.contact "luis", "info@luisbravoa.com", "sdfdsfdsfsdfd"
+  end
 
   def get_all_platforms
     platforms = {}

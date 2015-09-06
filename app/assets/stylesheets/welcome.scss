@@ -32,6 +32,7 @@ nav{
 .btn.btn-primary{
   background-color: $primaryBright;
   border-color: darken($primaryBright, 10%);
+  background-image: none;
 }
 .btn.btn-primary:hover{
   background-color: darken($primaryBright, 5%);
@@ -45,6 +46,9 @@ nav{
   }
   .navbar-collapse{
     background-color: black;
+  }
+  nav{
+    height: auto;
   }
 }
 @media (min-width: 768px){
@@ -90,7 +94,19 @@ a.navbar-brand{
 #welcome-right {
   width: 50%;
 }
+@media (max-width: 768px){
+  #welcome {
+    display: block;
 
+  }
+  #welcome-left {
+    width: 100%;
+  }
+  #welcome-right {
+    margin-top: 50px;
+    width: 100%;
+  }
+}
 #download{
 
 }
@@ -104,10 +120,16 @@ a.navbar-brand{
 
 
 #platforms h1, #info h1{
-  margin: 35px 0;
+  margin-top: 35px;
+  margin-bottom: 15px;
 }
-#platforms, #info{
-  padding: 50px 0;
+#info{
+  padding-top: 0px;
+  padding-bottom: 50px;
+}
+#platforms{
+  padding-top: 30px;
+  padding-bottom: 50px;
 }
 
 #subscribe{
@@ -117,7 +139,8 @@ a.navbar-brand{
 #subscribe.dark{
   background-color: $borderDark;
   color: $textLight;
-  padding: 130px 0;
+  padding-top: 130px;
+  padding-bottom: 130px;
 }
 #subscribe h1{
   margin-top: 0px;
@@ -144,6 +167,22 @@ a.navbar-brand{
 #subscribe-thanks{
   display: none;
 }
+
+@media (max-width: 768px){
+  #subscribe-field{
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  #subscribe #email{
+    width: calc( 100% - 100px);
+    display: inline-block;
+  }
+  #subscribe button{
+    width: 100px;
+    display: inline-block;
+  }
+}
 .btn.btn-default{
   background-color: $secondary;
   border-color: darken($secondary, 10%);
@@ -163,4 +202,19 @@ a.navbar-brand{
 
 #footer{
   margin-top: 50px;
+}
+
+#share{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: flex-start;
+  align-items: center;
+}
+#share-fb, #share-twitter {
+  margin: 10px;
+}
+
+.form-control{
+  border-radius: 0;
 }
