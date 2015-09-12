@@ -4,7 +4,6 @@
             <h1> <%= t 'welcome.title' %></h1>
             <%= render :partial => "partials/download_button", locals: {:platform => @platforms[@platform]} %>
             <p id="platform-link"><a href="#platforms"><%= t "welcome.download_platforms"%></a></p>
-            <%= @controller_message %>
         </div>
 
         <div id="welcome-right">

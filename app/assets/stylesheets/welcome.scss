@@ -39,7 +39,9 @@ nav{
   border-color: darken($primaryBright,10%);
   background-position: 0;
 }
-
+.navbar-inverse .navbar-nav>.active>a, .navbar-inverse .navbar-nav>.open>a{
+  background-image: none;
+}
 @media (max-width: 768px){
   #logo{
     height: 40px;
@@ -49,6 +51,9 @@ nav{
   }
   nav{
     height: auto;
+  }
+  .navbar-collapse{
+    background-color: $primaryDark;
   }
 }
 @media (min-width: 768px){
@@ -115,7 +120,7 @@ a.navbar-brand{
 }
 
 #download-button{
-  padding: 15px 0;
+  padding: 15px 0 0;
 }
 
 
@@ -219,6 +224,12 @@ a.navbar-brand{
   border-radius: 0;
 }
 
+#contact, #platforms{
+  padding-top: 60px;
+}
+#contact{
+  padding-bottom: 60px;
+}
 #contactResult{
   height: 30px;
 }

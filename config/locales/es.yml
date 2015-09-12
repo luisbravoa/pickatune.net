@@ -1,0 +1,42 @@
+es:
+  name: "Pickatune"
+  title: "Pickatune - Servidor de Música"
+  nav:
+    home: "Inicio"
+    download: "Descarga"
+    contact: "Contacto"
+  welcome:
+    title: "Reproductor y Servidor de Música"
+    download_platforms: "Descarga Pickatune para otras plataformas"
+  info:
+    title: "Disfruta la Musca"
+    feature1:
+      title: "Servidor de Música"
+      content: "Pickatune escanea toda tu musica y la have disponible para escuchar en otros dispositivos en la misma red wifi."
+    feature2:
+      title: "Control Remoto"
+      content: "Usa tu teléfono o tablet para controlar la reproducción en tu computadora."
+    feature3:
+      title: "Playlist para fiestas"
+      content: "Con Pickatune Diferentes usuarios pueden controlar la reproducción y agregar canciones a la playlist haciendo que sea perfecta para fiestas."
+  subscribe:
+    title: "Subscribete y te haremos saber cuando nuevas versiones estén disponibles"
+    placeholder: "Email"
+    submit: "Subscribete"
+    thanks: "Gracias!"
+  platforms:
+    title: "Todas las plataformas"
+    download: "Descargar"
+    for: "para"
+  download:
+    title: "Gracias por la descarga."
+    message: "La descarga comenzara en {0} segundos."
+    done_message: "Si no comienza has click"
+    done_message_link: "aqui"
+  contact:
+    title: "Contacto"
+    email: "Email"
+    name: "Nombre"
+    message: "Mensaje"
+    submit: "Enviar"
+    success: "Gracias por el mensaje, estaremos en contacto!"

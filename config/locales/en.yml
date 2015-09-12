@@ -21,6 +21,7 @@
 
 en:
   name: "Pickatune"
+  title: "Pickatune - Music Server"
   nav:
     home: "Home"
     download: "Download"
