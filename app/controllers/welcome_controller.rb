@@ -10,7 +10,18 @@ class WelcomeController < ApplicationController
     @path = "#{params['platform']}/#{params['file']}"
   end
   def contact
-    ContactMailer.contact "luis", "info@luisbravoa.com", "sdfdsfdsfsdfd"
+
+    parse_request
+
+    unless @json.has_key?('email') && @json.has_key?('name') && @json.has_key?('message')
+      return render :nothing => true, :status => :bad_request
+    end
+
+
+    ContactMailer.contact(@json['name'], @json['email'], @json['message']).deliver_now
+
+    render :nothing => true
+
   end
 
   def get_all_platforms

@@ -1,7 +1,10 @@
 class ContactMailer < ApplicationMailer
-  default from: 'info@pickatune.net'
+  default from: 'noreply@pickatune.net'
 
   def contact(name, email, message)
-    mail(:to => email, :subject => "New message #{name}")
+    @name = name
+    @email = email
+    @message = message
+    mail(:to => 'info@pickatune.net', :subject => "New message from #{name}")
   end
 end

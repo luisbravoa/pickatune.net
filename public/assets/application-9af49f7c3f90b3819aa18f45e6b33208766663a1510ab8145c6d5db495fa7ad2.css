@@ -1,0 +1,283 @@
+/* line 16, /home/luisbravoa/code/pickatune.net/app/assets/stylesheets/welcome.scss */
+html, body {
+  font-family: 'Titillium Web', sans-serif;
+}
+
+/* line 23, /home/luisbravoa/code/pickatune.net/app/assets/stylesheets/welcome.scss */
+nav {
+  height: 75px;
+}
+
+/* line 26, /home/luisbravoa/code/pickatune.net/app/assets/stylesheets/welcome.scss */
+#main {
+  padding-top: 80px;
+}
+
+/* line 29, /home/luisbravoa/code/pickatune.net/app/assets/stylesheets/welcome.scss */
+.btn {
+  border-radius: 0;
+}
+
+/* line 32, /home/luisbravoa/code/pickatune.net/app/assets/stylesheets/welcome.scss */
+.btn.btn-primary {
+  background-color: #172D56;
+  border-color: #0c182e;
+  background-image: none;
+}
+
+/* line 37, /home/luisbravoa/code/pickatune.net/app/assets/stylesheets/welcome.scss */
+.btn.btn-primary:hover {
+  background-color: #122242;
+  border-color: #0c182e;
+  background-position: 0;
+}
+
+@media (max-width: 768px) {
+  /* line 44, /home/luisbravoa/code/pickatune.net/app/assets/stylesheets/welcome.scss */
+  #logo {
+    height: 40px;
+  }
+
+  /* line 47, /home/luisbravoa/code/pickatune.net/app/assets/stylesheets/welcome.scss */
+  .navbar-collapse {
+    background-color: black;
+  }
+
+  /* line 50, /home/luisbravoa/code/pickatune.net/app/assets/stylesheets/welcome.scss */
+  nav {
+    height: auto;
+  }
+}
+@media (min-width: 768px) {
+  /* line 55, /home/luisbravoa/code/pickatune.net/app/assets/stylesheets/welcome.scss */
+  .navbar-nav > li > a {
+    margin-top: 15px;
+  }
+}
+/* line 60, /home/luisbravoa/code/pickatune.net/app/assets/stylesheets/welcome.scss */
+.navbar.navbar-inverse.navbar-fixed-top {
+  background-color: #0A1426;
+  background-image: none;
+  border: none;
+}
+
+/* line 66, /home/luisbravoa/code/pickatune.net/app/assets/stylesheets/welcome.scss */
+a.navbar-brand {
+  padding: 5px 15px;
+}
+
+/* line 69, /home/luisbravoa/code/pickatune.net/app/assets/stylesheets/welcome.scss */
+.jumbotron {
+  background-color: #0A1426;
+  color: white;
+}
+
+/* line 73, /home/luisbravoa/code/pickatune.net/app/assets/stylesheets/welcome.scss */
+#welcome {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+/* line 81, /home/luisbravoa/code/pickatune.net/app/assets/stylesheets/welcome.scss */
+#welcome h1 {
+  font-size: 50px;
+}
+
+/* line 84, /home/luisbravoa/code/pickatune.net/app/assets/stylesheets/welcome.scss */
+#welcome #platform {
+  font-size: 15px;
+}
+
+/* line 87, /home/luisbravoa/code/pickatune.net/app/assets/stylesheets/welcome.scss */
+#welcome #platform-link {
+  font-size: 18px;
+  color: #FFFFFF;
+}
+
+/* line 91, /home/luisbravoa/code/pickatune.net/app/assets/stylesheets/welcome.scss */
+#welcome-left {
+  width: 50%;
+}
+
+/* line 94, /home/luisbravoa/code/pickatune.net/app/assets/stylesheets/welcome.scss */
+#welcome-right {
+  width: 50%;
+}
+
+@media (max-width: 768px) {
+  /* line 98, /home/luisbravoa/code/pickatune.net/app/assets/stylesheets/welcome.scss */
+  #welcome {
+    display: block;
+  }
+
+  /* line 102, /home/luisbravoa/code/pickatune.net/app/assets/stylesheets/welcome.scss */
+  #welcome-left {
+    width: 100%;
+  }
+
+  /* line 105, /home/luisbravoa/code/pickatune.net/app/assets/stylesheets/welcome.scss */
+  #welcome-right {
+    margin-top: 50px;
+    width: 100%;
+  }
+}
+/* line 113, /home/luisbravoa/code/pickatune.net/app/assets/stylesheets/welcome.scss */
+#download i {
+  margin-left: 10px;
+}
+
+/* line 117, /home/luisbravoa/code/pickatune.net/app/assets/stylesheets/welcome.scss */
+#download-button {
+  padding: 15px 0;
+}
+
+/* line 122, /home/luisbravoa/code/pickatune.net/app/assets/stylesheets/welcome.scss */
+#platforms h1, #info h1 {
+  margin-top: 35px;
+  margin-bottom: 15px;
+}
+
+/* line 126, /home/luisbravoa/code/pickatune.net/app/assets/stylesheets/welcome.scss */
+#info {
+  padding-top: 0px;
+  padding-bottom: 50px;
+}
+
+/* line 130, /home/luisbravoa/code/pickatune.net/app/assets/stylesheets/welcome.scss */
+#platforms {
+  padding-top: 30px;
+  padding-bottom: 50px;
+}
+
+/* line 135, /home/luisbravoa/code/pickatune.net/app/assets/stylesheets/welcome.scss */
+#subscribe {
+  text-align: center;
+}
+
+/* line 139, /home/luisbravoa/code/pickatune.net/app/assets/stylesheets/welcome.scss */
+#subscribe.dark {
+  background-color: #222;
+  color: #FFFFFF;
+  padding-top: 130px;
+  padding-bottom: 130px;
+}
+
+/* line 145, /home/luisbravoa/code/pickatune.net/app/assets/stylesheets/welcome.scss */
+#subscribe h1 {
+  margin-top: 0px;
+  margin-bottom: 30px;
+  font-size: 30px;
+}
+
+/* line 150, /home/luisbravoa/code/pickatune.net/app/assets/stylesheets/welcome.scss */
+#subscribe form {
+  font-size: 18px;
+}
+
+/* line 156, /home/luisbravoa/code/pickatune.net/app/assets/stylesheets/welcome.scss */
+#subscribe #email {
+  border-radius: 0;
+  padding: 20px;
+  padding-left: 10px;
+  width: 350px;
+}
+
+/* line 162, /home/luisbravoa/code/pickatune.net/app/assets/stylesheets/welcome.scss */
+#subscribe button[type=submit].btn.btn-default {
+  padding: 10px;
+  margin-left: -4px;
+  background-image: none;
+}
+
+/* line 167, /home/luisbravoa/code/pickatune.net/app/assets/stylesheets/welcome.scss */
+#subscribe-thanks {
+  display: none;
+}
+
+@media (max-width: 768px) {
+  /* line 172, /home/luisbravoa/code/pickatune.net/app/assets/stylesheets/welcome.scss */
+  #subscribe-field {
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  /* line 177, /home/luisbravoa/code/pickatune.net/app/assets/stylesheets/welcome.scss */
+  #subscribe #email {
+    width: calc( 100% - 100px);
+    display: inline-block;
+  }
+
+  /* line 181, /home/luisbravoa/code/pickatune.net/app/assets/stylesheets/welcome.scss */
+  #subscribe button {
+    width: 100px;
+    display: inline-block;
+  }
+}
+/* line 186, /home/luisbravoa/code/pickatune.net/app/assets/stylesheets/welcome.scss */
+.btn.btn-default {
+  background-color: #e04e4e;
+  border-color: #d62525;
+  color: #FFFFFF;
+}
+
+/* line 191, /home/luisbravoa/code/pickatune.net/app/assets/stylesheets/welcome.scss */
+.btn.btn-default:hover {
+  background-color: #dc3838;
+  border-color: #d62525;
+  color: #FFFFFF;
+}
+
+/* line 198, /home/luisbravoa/code/pickatune.net/app/assets/stylesheets/welcome.scss */
+#thanks {
+  padding: 150px 0 50px;
+  text-align: center;
+}
+
+/* line 203, /home/luisbravoa/code/pickatune.net/app/assets/stylesheets/welcome.scss */
+#footer {
+  margin-top: 50px;
+}
+
+/* line 207, /home/luisbravoa/code/pickatune.net/app/assets/stylesheets/welcome.scss */
+#share {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+/* line 214, /home/luisbravoa/code/pickatune.net/app/assets/stylesheets/welcome.scss */
+#share-fb, #share-twitter {
+  margin: 10px;
+}
+
+/* line 218, /home/luisbravoa/code/pickatune.net/app/assets/stylesheets/welcome.scss */
+.form-control {
+  border-radius: 0;
+}
+
+/* line 222, /home/luisbravoa/code/pickatune.net/app/assets/stylesheets/welcome.scss */
+#contactResult {
+  height: 30px;
+}
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or any plugin's vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any styles
+ * defined in the other CSS/SCSS files in this directory. It is generally better to create a new
+ * file per style scope.
+ *
+
+
+ */
+
