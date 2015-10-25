@@ -1,11 +1,7 @@
 class WelcomeController < ApplicationController
   def index
-    puts request.env['HTTP_ACCEPT_LANGUAGE']
-    puts "============= ALO =============="
-    puts request.env['HTTP_ACCEPT_LANGUAGE'].scan(/^[a-z]{2}/).first
     @platform = platform(request.user_agent)
     @platforms = get_all_platforms
-    puts @platforms
   end
 
   def download
