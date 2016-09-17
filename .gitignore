@@ -15,3 +15,4 @@
 /config/secrets.yml
 .idea
 /public/dist
+public/assets/**
